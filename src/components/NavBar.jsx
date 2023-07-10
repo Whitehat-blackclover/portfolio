@@ -9,37 +9,42 @@ const NavBar = () => {
     const links = [
         {
             id: 1,
+            name: 'home',
             link:"home",
         },
         {
             id: 2,
+            name: 'about me!',
             link: 'about',
         },
         {
             id: 3,
+            name: 'anime',
             link: 'portfolio',
         },
         {
             id: 4,
+            name: 'tech used',
             link: 'experience',
         },
         {
             id: 5,
+            name: 'contact',
             link: 'Contact',
         },
     ];
 
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed'>
+    <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black'>
         <div>
             <h1 className='text-5xl font-signature ml-2'>
-                Yami
+                Vyom
             </h1>
         </div>
         <ul className='hidden md:flex'>
             {links.map(({id, link}) => (
                 <li key={id} className='px-4 cursor-pointer uppercase font-medium text-gray-500 hover:scale-105 duration-200'>
-                    <Link to={link} smooth duration={500}>{link}</Link>
+                    <Link to={link} smooth duration={500}>{links.name}</Link>
                     </li>
                 ))}
         </ul>

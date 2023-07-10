@@ -1,50 +1,45 @@
 import React from "react";
-import arrayDestruct from "../assets/Portfolio/arrayDestruct.jpg";
-import installNode from "../assets/Portfolio/installNode.jpg";
-import navbar from "../assets/Portfolio/navbar.jpg";
-import reactParallax from "../assets/Portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/Portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/Portfolio/reactWeather.jpg";
+import BlackClover from '../assets/Portfolio/BlackClover.jpg'
+import Naruto from '../assets/Portfolio/Naruto.jpg'
+import high from '../assets/Portfolio/high.jpg'
+import myhero from '../assets/Portfolio/myhero.jpg'
+import darwin from '../assets/Portfolio/darwin.jpg'
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: BlackClover,
     },
     {
       id: 2,
-      src: reactParallax,
+      src: Naruto,
     },
     {
       id: 3,
-      src: navbar,
+      src: high,
     },
     {
-      id: 4,
-      src: reactSmooth,
+      id:4,
+      src: myhero,
     },
     {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      id : 5,
+      src: darwin,
     },
   ];
 
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-gray-800 via-gray-800 to-gray-700 w-full text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+            Top Anime!
           </p>
-          <p className="py-6">Check out some of my work right here</p>
+          <p className="py-6">Suggested to watch!</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
